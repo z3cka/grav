@@ -23,6 +23,12 @@
         "pimple/pimple": "~3.0",
         "rockettheme/toolbox": "1.0.*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "4.6.*",
+        "aik099/phpunit-mink": "~2.0",
+        "behat/mink": "1.6.*",
+        "behat/mink-goutte-driver": "1.1.*"
+    },
     "autoload": {
         "psr-4": {
             "Grav\\": "system/src/Grav"
