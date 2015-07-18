@@ -22,7 +22,7 @@
         "donatj/phpuseragentparser": "~0.3",
         "pimple/pimple": "~3.0",
         "rockettheme/toolbox": "1.0.*",
-        "hoa/ruler": "1.15.05.29"
+        "symfony/expression-language": "^2.7"
     },
     "autoload": {
         "psr-4": {
