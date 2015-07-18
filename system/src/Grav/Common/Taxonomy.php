@@ -4,6 +4,7 @@ namespace Grav\Common;
 use Grav\Common\Config\Config;
 use Grav\Common\Page\Collection;
 use Grav\Common\Page\Page;
+use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 
 /**
  * The Taxonomy object is a singleton that holds a reference to a 'taxonomy map'. This map is
@@ -71,10 +72,10 @@ class Taxonomy
     }
 
     /**
-     * Returns a new Page object with the sub-pages containing all the values set for a
+     * Returns a new Collection object with the sub-pages containing all the values set for a
      * particular taxonomy.
      *
-     * @param  array $taxonomies taxonomies to search, eg ['tag'=>['animal','cat']]
+     * @param  array $taxonomies taxonomies to search, eg {'tag'=>['animal','cat']}
      * @param  string $operator can be 'or' or 'and' (defaults to 'or')
      * @return Collection       Collection object set to contain matches found in the taxonomy map
      */
@@ -103,6 +104,13 @@ class Taxonomy
         }
 
         return new Collection($results, ['taxonomies' => $taxonomies]);
+    }
+
+    public function find($expression)
+    {
+        echo $expression;
+
+        $language = new ExpressionLanguage();
     }
 
     /**
