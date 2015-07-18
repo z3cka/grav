@@ -12,7 +12,6 @@
         "symfony/yaml": "2.7.*",
         "symfony/console": "2.7.*",
         "symfony/event-dispatcher": "2.7.*",
-        "symfony/expression-language": "2.7.*",
         "doctrine/cache": "~1.4",
         "maximebf/debugbar": "dev-master",
         "filp/whoops": "1.2.*@dev",
@@ -22,7 +21,8 @@
         "mrclay/minify": "~2.2",
         "donatj/phpuseragentparser": "~0.3",
         "pimple/pimple": "~3.0",
-        "rockettheme/toolbox": "1.0.*"
+        "rockettheme/toolbox": "1.0.*",
+        "hoa/ruler": "1.15.05.29"
     },
     "autoload": {
         "psr-4": {

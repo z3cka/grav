@@ -4,7 +4,7 @@ namespace Grav\Common;
 use Grav\Common\Config\Config;
 use Grav\Common\Page\Collection;
 use Grav\Common\Page\Page;
-use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
+use Hoa\Ruler\Ruler;
 
 /**
  * The Taxonomy object is a singleton that holds a reference to a 'taxonomy map'. This map is
@@ -110,7 +110,7 @@ class Taxonomy
     {
         echo $expression;
 
-        $language = new ExpressionLanguage();
+        $language = new Ruler();
     }
 
     /**
