@@ -13,6 +13,7 @@ use Grav\Common\Filesystem\Folder;
 use RocketTheme\Toolbox\Event\Event;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
 use Whoops\Exception\ErrorException;
+use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
 
 /**
  * GravPages is the class that is the entry point into the hierarchy of pages
@@ -304,6 +305,25 @@ class Pages
         return $page;
     }
 
+
+    public function findPages($expression)
+    {
+        $language = new ExpressionLanguage();
+
+        $found_pages = [];
+
+        foreach ($this->routes as $route => $path) {
+            $page = $this->dispatch($route);
+            $result = $language->evaluate($expression, ['taxonomy' => $page->expressionTaxonomy()]);
+            if ($result) {
+                $found_pages[$route] = $path;
+            }
+        }
+
+        return $found_pages;
+
+    }
+
     /**
      * Get root page.
      *
@@ -495,6 +515,7 @@ class Pages
         }
         return self::$home_route;
     }
+
 
     /**
      * Builds pages.

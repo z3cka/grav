@@ -1,6 +1,7 @@
 <?php
 namespace Grav\Common\Page;
 
+use Grav\Common\Expression\ExpressionObject;
 use Grav\Common\Filesystem\Folder;
 use Grav\Common\Config\Config;
 use Grav\Common\GravTrait;
@@ -1458,57 +1459,10 @@ class Page
         return $this->taxonomy;
     }
 
-    /**
-     * Simple method to return whether this page has ANY of the requested taxonomies
-     * @param      $taxonomy
-     * @param null $values
-     *
-     * @return bool
-     */
-    public function hasAnyTaxonomy($taxonomy, $values = null)
+    public function expressionTaxonomy()
     {
-        if ($this->taxonomy[$taxonomy]) {
-            if ($values === null) {
-                return true;
-            } else {
-                $results = $this->taxonomy[$taxonomy];
-                foreach ((array) $values as $value) {
-                    if (in_array($value, $results)) {
-                        return true;
-                    }
-                }
-            }
-        }
-        return false;
-    }
-
-    /**
-     * Simple method to return whether this page has ALL of the requested taxonomies
-     * @param      $taxonomy
-     * @param null $values
-     *
-     * @return bool
-     */
-    public function hasAllTaxonomy($taxonomy, $values = null)
-    {
-        if ($this->taxonomy[$taxonomy]) {
-            if ($values === null) {
-                return true;
-            } else {
-                $has_all = true;
-                $results = $this->taxonomy[$taxonomy];
-                foreach ((array) $values as $value) {
-                    if (!in_array($value, $results)) {
-                        $has_all = false;
-                        break;
-                    }
-                }
-                if ($has_all) {
-                    return true;
-                }
-            }
-        }
-        return false;
+        $obj = new ExpressionObject($this->taxonomy);
+        return $obj;
     }
 
      /**
