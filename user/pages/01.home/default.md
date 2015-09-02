@@ -1,8 +1,10 @@
 ---
 title: Home
+published: true
 ---
 
 # Grav is Running!
+![](2015-09-01.jpg)
 ## You have installed **Grav** successfully
 
 Congratulations! You have installed the **Base Grav Package** that provides a **simple page** and the default **antimatter** theme to get you started.
