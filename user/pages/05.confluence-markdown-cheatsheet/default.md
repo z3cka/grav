@@ -2,6 +2,7 @@
 title: 'Confluence Markdown Cheatsheet'
 ---
 
+![confluence logo](rzFvW-gC_400x400.png)
 # Headings
 # h1.
 ## h2.
@@ -10,3 +11,7 @@ title: 'Confluence Markdown Cheatsheet'
 
 # Links
 [link title|http://example.com]
+
+
+# Font Formatting
+<pre>{{Monospace text}}</pre>
