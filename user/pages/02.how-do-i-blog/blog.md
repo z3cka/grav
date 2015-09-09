@@ -1,5 +1,5 @@
 ---
-title: 'How Do I Blog?'
+title: Blog
 content:
     limit: 5
     pagination: '1'
