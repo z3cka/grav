@@ -1,5 +1,5 @@
 ---
-title: 'Confluence Markdown Cheatsheet'
+title: 'Markdown Cheatsheet'
 ---
 
 ![confluence logo](rzFvW-gC_400x400.png)
