@@ -24,7 +24,7 @@ Creates a meme with one of the following patterns:
     /meme scumbag {text} then {text}
     /meme what if I told you {text}
     /meme I hate {text}
-    /meme why can't {personal pronoun} {text}
+    /meme why can&#39;t {personal pronoun} {text}
     /meme {text} so I got that going for me
     /meme {things}, how do they work?
     /meme {text}{3 x a|e|i|o|u|y}{text}
