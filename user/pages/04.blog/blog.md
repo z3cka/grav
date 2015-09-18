@@ -1,7 +1,8 @@
 ---
 title: Blog
+published: true
 content:
-    limit: 5
+    limit: 10
     pagination: '1'
     order:
         dir: desc
