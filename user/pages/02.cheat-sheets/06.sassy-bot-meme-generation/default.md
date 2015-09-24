@@ -9,8 +9,9 @@ Creates a meme with one of the following patterns:
     /meme aliens guy {text}
     /meme brace yourself {text}
     /meme {text} all the {things}
-    /meme I don't always {something} but when I do {text}
-    /meme {text} too damn {something}
+    /meme I don't always {something} but when I do {text}</code></pre>
+![The most interesting chatter in the world](http://i.memecaptain.com/gend_images/mh-X-w.jpg)
+<pre><code>    /meme {text} too damn {something}
     /meme not sure if {something} or {something else}
     /meme yo dawg {text} so {text}
     /meme all your {text} are belong to {text}
