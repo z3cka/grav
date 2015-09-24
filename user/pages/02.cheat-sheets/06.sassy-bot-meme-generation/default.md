@@ -10,6 +10,7 @@ Creates a meme with one of the following patterns:
     /meme brace yourself {text}
     /meme {text} all the {things}
     /meme I don't always {something} but when I do {text}</code></pre>
+Example: ```/meme I don't always Slack chat but when I do user HipChat```
 ![The most interesting chatter in the world](http://i.memecaptain.com/gend_images/mh-X-w.jpg)
 <pre><code>    /meme {text} too damn {something}
     /meme not sure if {something} or {something else}
@@ -21,8 +22,10 @@ Creates a meme with one of the following patterns:
     /meme {word that can start a question} the {expletive} {text}
     /meme success when {text} then {text}
     /meme cry when {text} then {text}
-    /meme bad luck when {text} then {text}
-    /meme scumbag {text} then {text}
+    /meme bad luck when {text} then {text}</code></pre>
+Example: ```/meme bad luck when fixes mysql then solr crashes```
+![fix mysql, solr crashes](http://i.memecaptain.com/gend_images/_-xhsQ.jpg)
+<pre><code>    /meme scumbag {text} then {text}
     /meme what if I told you {text}
     /meme I hate {text}
     /meme why can&#39;t {personal pronoun} {text}
