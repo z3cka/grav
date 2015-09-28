@@ -15,3 +15,11 @@ title: 'Markdown Cheatsheet'
 
 # Font Formatting
 <pre>{{Monospace text}}</pre>
+
+![Jira logo](https://dev.acquia.com/sites/default/files/jira_0.png)
+# Images
+!sample.png|width=450!
+
+# Paragraphs
+## Blockquotes
+> bq. Your quoted text here...
