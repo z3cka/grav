@@ -9,4 +9,4 @@ Where's Dom!?
 **this is a test of the automated deployment system**
 ## It works!!!
 
-More info on this coming soon.... someday
+More info on this coming soon.... someday soon.
